@@ -1,12 +1,8 @@
-// index.js
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import { createRoot } from 'react-dom/client'; // Cambiado a createRoot
 import App from './App';
+import './index.css'; // Estilos globales (opcional)
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const container = document.getElementById('root'); // Obtiene el contenedor
+const root = createRoot(container); // Crea la raíz usando createRoot
+root.render(<App />); // Renderiza tu componente App
