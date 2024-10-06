@@ -13,7 +13,7 @@ function CountryList({ openModal, handleDelete }) {
       destroy: true,
       serverSide: true, // Habilitar procesamiento del lado del servidor
       ajax: {
-        url: 'http://localhost:8000/api/v1/countries/search', // Cambia por el endpoint de tu API
+        url: 'http://localhost:8000/api/v1/countries/search/', // Cambia por el endpoint de tu API
         type: 'GET',
         data: function (d) {
           return {
@@ -22,9 +22,7 @@ function CountryList({ openModal, handleDelete }) {
             page_size: d.length, // Tamaño de página
           };
         },
-        dataSrc: function (json) {
-          return json.data;
-        },
+        dataSrc: ''
       },
       columns: [
         { data: 'code' },
