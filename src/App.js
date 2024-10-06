@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CountryList from './components/CountryList';
 import Modal from 'react-modal';
+import Swal from 'sweetalert2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 Modal.setAppElement('#root');
@@ -60,11 +61,35 @@ function App() {
   };
 
   const handleDelete = (code) => {
-    axios.delete(`http://localhost:8000/api/v1/countries/`, { params: { code } })
-      .then(() => {
-        setCountries(countries.filter(country => country.code !== code));
-      })
-      .catch(error => console.error('Error deleting country', error));
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#d33',
+      cancelButtonColor: '#3085d6',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        axios.delete(`http://localhost:8000/api/v1/countries/`, { params: { code } })
+          .then(() => {
+            setCountries(countries.filter(country => country.code !== code));
+            Swal.fire(
+              'Deleted!',
+              'The country has been deleted.',
+              'success'
+            );
+          })
+          .catch(error => {
+            console.error('Error deleting country', error);
+            Swal.fire(
+              'Error!',
+              'There was an issue deleting the country.',
+              'error'
+            );
+          });
+      }
+    });
   };
 
   return (
