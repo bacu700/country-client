@@ -1,0 +1,110 @@
+/* tableStyles.css */
+
+/* Estilo general de la página */
+body {
+    background-color: #1f1f1f; /* Fondo oscuro */
+    color: #f8f9fa; /* Texto claro */
+  }
+  
+  .container {
+    padding: 2rem;
+    background-color: #282c34; /* Fondo ligeramente más oscuro para el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  }
+  
+  /* Títulos centrados */
+  h1 {
+    color: #ffffff;
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de las tablas */
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #f8f9fa;
+    background-color: #2b2b2b; /* Fondo oscuro para las tablas */
+    border-collapse: collapse; /* Elimina los espacios entre celdas */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el borde se vea bien */
+  }
+  
+  .table thead th {
+    background-color: #1f1f1f; /* Fondo oscuro para el encabezado */
+    color: #ffffff; /* Texto claro */
+    border-bottom: 2px solid #444; /* Borde inferior */
+    padding: 12px;
+    text-align: center; /* Centra el texto del encabezado */
+  }
+  
+  .table tbody td {
+    padding: 12px;
+    text-align: center; /* Centra el texto de las filas */
+    border-bottom: 1px solid #444; /* Borde sutil */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #333; /* Fondo más oscuro al pasar el mouse */
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #2e2e2e; /* Fila oscura para tablas con estilo "striped" */
+  }
+  
+  /* Botones */
+  
+  
+  .btn-primary {
+    background-color: #007bff; /* Azul para el botón primario */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #7d766c; /* Gris para el botón secundario */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Tipografía */
+  body, table, button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+  }
+  
+  h1 {
+    color: white; /* Cambia el color del título a blanco */
+    background-color: #d8d8db; /* Color azul para el fondo del título */
+    padding: 10px; /* Agregar un poco de padding para mejorar el aspecto */
+    border-radius: 5px; /* Bordes redondeados para el fondo del título */
+    text-align: center; /* Centrar el título */
+  }
+  button {
+    font-size: 1rem;
+  }
+    
+
+  /* Botones de edición y eliminación */
+.btn-edit {
+  background-color: #28a745; /* Verde */
+}
+
+.btn-edit:hover {
+  background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
+
+.btn-delete {
+  background-color: #dc3545; /* Rojo */
+}
+
+.btn-delete:hover {
+  background-color: #c82333; /* Rojo más oscuro al pasar el mouse */
+}
+
+

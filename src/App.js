@@ -3,6 +3,8 @@ import axios from 'axios';
 import CountryList from './components/CountryList';
 import Modal from 'react-modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './modalStyles.css'; // o el nombre que hayas dado al archivo
+
 
 Modal.setAppElement('#root');
 

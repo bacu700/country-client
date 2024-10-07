@@ -1,0 +1,70 @@
+/* Modo oscuro para el modal */
+.modal-dialog {
+    max-width: 600px; /* Ajusta el ancho del modal */
+    margin: 30px auto; /* Centra el modal verticalmente */
+  }
+  
+  .modal-content {
+    background-color: #2b2b2b; /* Fondo oscuro del modal */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada */
+    color: #f1f1f1; /* Texto claro */
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: white; /* Asegúrate de que el color del texto sea blanco para que se vea bien sobre un fondo oscuro */
+  }
+  
+  .modal-header {
+    background-color: #1f1f1f; /* Color oscuro para el encabezado */
+    color: #f8f9fa; /* Color del texto en el encabezado */
+    border-bottom: 1px solid #444; /* Borde sutil */
+  }
+  
+  .modal-body {
+    padding: 20px; /* Espaciado interno */
+    background-color: #333; /* Fondo oscuro para el cuerpo */
+  }
+  
+  .modal-footer {
+    padding: 15px; /* Espaciado para los botones */
+    background-color: #1f1f1f; /* Fondo oscuro del pie del modal */
+    border-top: 1px solid #444; /* Borde sutil */
+    text-align: right; /* Alineación a la derecha */
+  }
+  
+  .btn-success {
+    background-color: #28a745; /* Color verde para el botón "success" */
+    border: none; /* Sin borde */
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d; /* Color gris para el botón "secondary" */
+    border: none; /* Sin borde */
+  }
+  
+  .btn-secondary:hover, .btn-success:hover {
+    background-color: #444; /* Cambia el color del botón al pasar el mouse */
+  }
+  
+  .close {
+    color: #f8f9fa; /* Color del botón de cerrar */
+  }
+  
+  .close:hover {
+    color: #ff4b5c; /* Color del botón de cerrar al pasar el mouse */
+  }
+  
+
+  h1 {
+    text-align: center; /* Centra el texto */
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 30px; /* Espaciado inferior */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto para mayor contraste */
+    font-family: 'Inter', sans-serif;
+
+}
+  

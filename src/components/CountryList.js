@@ -4,6 +4,7 @@ import $ from 'jquery';
 import 'datatables.net-dt';
 //import 'datatables.net-dt/css/jquery.dataTables.min.css';
 //import 'datatables.net-dt/css/jquery.dataTables.css';
+import './tableStyles.css'; // Ajusta la ruta según la ubicación del archivo
 
 function CountryList({ openModal, handleDelete }) {
   const tableRef = useRef(null);
@@ -53,9 +54,9 @@ function CountryList({ openModal, handleDelete }) {
       handleDelete(code);
     });
 
-    return () => {
-      table.destroy(true); // Limpiar la instancia de DataTables al desmontar
-    };
+    //return () => {
+      //table.destroy(true); // Limpiar la instancia de DataTables al desmontar
+    //};
   }, [openModal, handleDelete]);
 
   return (
